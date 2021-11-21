@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">        
+    
     <title>MCMaps | Minecraft Maps</title>
 
     <link rel="stylesheet" href="css/index/index.css">
 
     <script src="https://kit.fontawesome.com/9880171930.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
-        <nav>
-            <img src="/img/logo.png" alt="" srcset="">
+        <img src="img/logo.png" alt="">
+        <a href="javascript:void(0);" class="icon" onclick="slide()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id = "hide" class = "showMenu">
+            <a href="#" class = "nav-link">Latest</a>
 
-            <div class="dropdown">
-                <button class="dropbtn"><i class="fas fa-bars"></i></button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
+            <span class = "submenu"><span class = "nav-link">Map Categories</span> 
+                <a href="#" class="nav-link nav-link-sub">All Maps</a>
+                <a href="#" class="nav-link nav-link-sub">Puzzle</a>
+                <a href="#" class="nav-link nav-link-sub">Parkour</a>
+                <a href="#" class="nav-link nav-link-sub">Minigames</a>  
+                <a href="#" class="nav-link nav-link-sub">Maze</a>  
+                <a href="#" class="nav-link nav-link-sub">PvP</a>  
+                <a href="#" class="nav-link nav-link-sub">Horror</a>  
+            </span>
+            
+            <a href="#" class = "nav-link">Map Jam</a>
+            <a href="#" class = "nav-link">Map Verified</a>
+
+            <span class = "submenu"><span class = "nav-link">Map Categories</span> 
+                <a href="#" class="nav-link nav-link-sub">Upload a Map</a>
+                <a href="#" class="nav-link nav-link-sub">Update a Map</a>
+            </span>
+
+            <a href="#" class = "nav-link">Search</a>
         </nav>
+            
     </header>
+    <script src="/js/nav.js" async></script>
 </body>
 </html>
