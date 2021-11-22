@@ -15,14 +15,19 @@ main{
         background: $secondary;
         margin: 14px;
         margin-top: 90px;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        text-transform: uppercase;
+        text-align: center;
 
         img{
             aspect-ratio: 16/9; // only works on latest browsers, but it's a good fallback.
-            width: 100%;
-            }
-
-            .label{
+            width: 100%; 
             
+        }
+        .spot-image{
+            grid-column: 1/-1;
+            .label{
                 padding: 0;
                 margin: 0;
                 position: absolute;
@@ -30,6 +35,10 @@ main{
                 background: $primary;
                 padding: 5px;
             }
+        }
+        .spot-author, .spot-date, .spot-description{
+            display: none;
+        }
     }
 }
 

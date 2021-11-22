@@ -139,7 +139,11 @@ body {
 }
 
 p, a {
-  font-size: .75rem;
+  font-size: .5rem;
+}
+
+.label {
+  font-size: 0.5rem;
 }
 
 h1, h2 {
@@ -147,7 +151,7 @@ h1, h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: .5rem;
 }
 
 html, body {
@@ -163,6 +167,12 @@ main .spotlight {
   background: #63141b;
   margin: 14px;
   margin-top: 90px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 main .spotlight img {
@@ -170,12 +180,20 @@ main .spotlight img {
   width: 100%;
 }
 
-main .spotlight .label {
+main .spotlight .spot-image {
+  grid-column: 1/-1;
+}
+
+main .spotlight .spot-image .label {
   padding: 0;
   margin: 0;
   position: absolute;
   bottom: 100%;
   background: #E32D3D;
   padding: 5px;
+}
+
+main .spotlight .spot-author, main .spotlight .spot-date, main .spotlight .spot-description {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
