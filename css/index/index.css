@@ -8,19 +8,28 @@ html, body {
 
 header {
   background-color: #1a0d0e;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 3fr 1fr;
+      grid-template-columns: 6fr 3fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 header img {
   padding: 15px;
-  max-width: 50vw;
-  height: auto;
+  width: 50vw;
+}
+
+header a {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
 }
 
 header a i {
   color: #E32D3D;
-  position: absolute;
-  right: 15px;
-  top: 18px;
 }
 
 header .showMenu .nav-link {

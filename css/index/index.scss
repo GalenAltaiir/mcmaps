@@ -4,6 +4,9 @@ $secondary: #63141b;
 $bg: #0d0607;
 $bg-alt: #1a0d0e;
 
+$tablet: 768px;
+$desktop: 992px;
+
 html, body{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -14,19 +17,21 @@ html, body{
 
 header{
     background-color: $bg-alt;
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
 
     img{
         padding: 15px;
-        max-width: 50vw;
-        height: auto;
+        width: 50vw;
     }
 
     a {
+        grid-column-start: 3;
+        
         i{
             color: $primary;
-            position: absolute;
-            right: 15px;
-            top: 18px;
         }
     }
 
