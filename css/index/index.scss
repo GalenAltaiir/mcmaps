@@ -1,7 +1,10 @@
 @import '../general/header.scss';
+@import '../general/footer.scss';
+@import '../general/config.scss';
 @import '../general/typography.scss';
 
-html, body{
+
+html, body, button{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin: 0;
@@ -9,8 +12,11 @@ html, body{
     background-color: $bg;
 }
 
+
+
 main{
     .spotlight{
+        grid-template-columns: repeat(2, 1fr);
         position: relative;
         background: $secondary;
         margin: 14px;
@@ -36,10 +42,75 @@ main{
                 padding: 5px;
             }
         }
-        .spot-author, .spot-date, .spot-description{
+        .spot-author{
+            color: $primary;
+            text-transform: none;
+        }
+        .spot-date, .spot-description{
+            display: none;
+        }
+
+    }
+    
+    .label-long{
+        margin-top: 50px;
+        background-color: $secondary;
+        width: 100%;
+    }
+
+    .label-long-title{
+        margin: 0;
+        background: $primary;
+        width: 60vw;
+        padding: 10px;
+    }
+
+    .map-preview{
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        background: $bg-alt;
+
+        img{
+            width: 100%;
+            aspect-ratio: 16/9;
+            grid-row: 1/-1;
+        }
+
+        small{
+            display: grid;
+            .map-title, .map-author, .map-date .map-description{
+                row-gap: 0px;
+                column-gap: 0px;
+            }
+            
+            .map-title{
+                text-transform: uppercase;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+
+            .map-author, .map-date{
+                font-size: .3rem;
+                justify-self: center;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+            .map-description{
             display: none;
         }
     }
 }
+
+
+.hidden {
+    display: none;
+}
+
+
 
 

@@ -1,0 +1,83 @@
+footer {
+  text-align: center;
+  background: #1a0d0e;
+  margin-top: 50px;
+  padding-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+footer button,
+footer .btn {
+  text-decoration: none;
+  padding: 10px;
+  background: #E32D3D;
+  border: none;
+  color: white;
+  font-size: .65rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+footer img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: absolute;
+  height: 50px;
+  top: -25px;
+}
+
+footer .foot-nav a,
+footer .foot-nav span {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .referral {
+  background: #E32D3D;
+  padding: 5px;
+  margin: 7px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .disclaimer,
+footer .copyright {
+  color: gray;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+footer .disclaimer a,
+footer .copyright a {
+  text-decoration: underline;
+  color: gray;
+  font-size: 12px;
+}
+
+footer .copyright {
+  color: white;
+  width: 100%;
+  background: #E32D3D;
+}
+
+footer .copyright a {
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */

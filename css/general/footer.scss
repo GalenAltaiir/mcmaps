@@ -1,0 +1,85 @@
+@import '../general/scheme.scss';
+@import '../general/config.scss';
+
+footer {
+
+    button,
+    .btn {
+        text-decoration: none;
+        padding: 10px;
+        background: $primary;
+        border: none;
+        color: white;
+        font-size: .65rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    text-align: center;
+    background: $bg-alt;
+    margin-top: 50px;
+    padding-top: 25px;
+    display: grid;
+    position: relative;
+
+    img {
+        display: grid;
+        justify-self: center;
+        position: absolute;
+        height: 50px;
+        top: -25px;
+    }
+
+    .foot-nav {
+
+        a,
+        span {
+            text-align: center;
+            display: block;
+            color: white;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .referral {
+        background: $primary;
+        padding: 5px;
+        margin: 7px;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .disclaimer,
+    .copyright {
+        color: gray;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0;
+        margin-top: 15px;
+
+        a {
+            text-decoration: underline;
+            color: gray;
+            font-size: 12px;
+        }
+    }
+
+    .copyright {
+        color: white;
+        width: 100%;
+        background: $primary;
+
+        a {
+            color: white;
+        }
+    }
+}

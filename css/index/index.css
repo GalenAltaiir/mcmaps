@@ -134,6 +134,89 @@ header nav .submenu .nav-link-sub {
   }
 }
 
+footer {
+  text-align: center;
+  background: #1a0d0e;
+  margin-top: 50px;
+  padding-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+footer button,
+footer .btn {
+  text-decoration: none;
+  padding: 10px;
+  background: #E32D3D;
+  border: none;
+  color: white;
+  font-size: .65rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
+footer img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: absolute;
+  height: 50px;
+  top: -25px;
+}
+
+footer .foot-nav a,
+footer .foot-nav span {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .referral {
+  background: #E32D3D;
+  padding: 5px;
+  margin: 7px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .disclaimer,
+footer .copyright {
+  color: gray;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+footer .disclaimer a,
+footer .copyright a {
+  text-decoration: underline;
+  color: gray;
+  font-size: 12px;
+}
+
+footer .copyright {
+  color: white;
+  width: 100%;
+  background: #E32D3D;
+}
+
+footer .copyright a {
+  color: white;
+}
+
 body {
   color: white;
 }
@@ -154,7 +237,7 @@ h3 {
   font-size: .5rem;
 }
 
-html, body {
+html, body, button {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   margin: 0;
@@ -163,6 +246,8 @@ html, body {
 }
 
 main .spotlight {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   position: relative;
   background: #63141b;
   margin: 14px;
@@ -193,7 +278,77 @@ main .spotlight .spot-image .label {
   padding: 5px;
 }
 
-main .spotlight .spot-author, main .spotlight .spot-date, main .spotlight .spot-description {
+main .spotlight .spot-author {
+  color: #E32D3D;
+  text-transform: none;
+}
+
+main .spotlight .spot-date, main .spotlight .spot-description {
+  display: none;
+}
+
+main .label-long {
+  margin-top: 50px;
+  background-color: #63141b;
+  width: 100%;
+}
+
+main .label-long-title {
+  margin: 0;
+  background: #E32D3D;
+  width: 60vw;
+  padding: 10px;
+}
+
+main .map-preview {
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.25fr;
+      grid-template-columns: 1fr 1.25fr;
+  background: #1a0d0e;
+}
+
+main .map-preview img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  grid-row: 1/-1;
+}
+
+main .map-preview small {
+  display: -ms-grid;
+  display: grid;
+}
+
+main .map-preview small .map-title, main .map-preview small .map-author, main .map-preview small .map-date .map-description {
+  row-gap: 0px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+}
+
+main .map-preview small .map-title {
+  text-transform: uppercase;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main .map-preview small .map-author, main .map-preview small .map-date {
+  font-size: .3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+main .map-preview .map-description {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 /*# sourceMappingURL=index.css.map */
