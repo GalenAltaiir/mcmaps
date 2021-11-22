@@ -16,8 +16,8 @@ footer .btn {
   border: none;
   color: white;
   font-size: .65rem;
-  width: 80%;
-  margin-left: 10%;
+  width: 80vw;
+  margin-left: calc(10vw - 10px);
 }
 
 footer img {
