@@ -1,0 +1,150 @@
+@import '../general/scheme.scss';
+@import '../general/config.scss';
+
+header {
+    background-color: $bg-alt;
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    img {
+        padding: 15px;
+        width: 50vw;
+    }
+
+    a {
+        grid-column-start: 3;
+
+        i {
+            padding: 15px;
+            color: $primary;
+        }
+    }
+
+
+    .showMenu {
+        .nav-link {
+            opacity: 1;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 8px;
+            display: block;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    nav {
+        .nav-link {
+            display: none;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .submenu {
+            .nav-link-sub {
+                margin-left: 25px;
+            }
+        }
+
+    }
+}
+
+// MOBILE ONLY
+@media only screen and (max-width: 775px) {
+    .fa-chevron-down{
+        font-size: 0;
+    }
+}
+
+
+// TABLET
+
+@media only screen and (min-width: 776px) {
+    header {
+        img {
+            padding: 15px;
+            width: 30vw;
+            justify-self: left;
+        }
+    }
+}
+
+// DESKTOP
+
+@media only screen and (min-width: $desktop) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+
+        img {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            margin-left: 15px;
+            width: 100%;
+        }
+
+        .fa-bars{
+            font-size: 0;
+            pointer-events: none;
+        }
+
+
+        .showMenu {
+            display: flex;
+            align-items: center;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            text-align: center;
+
+            .nav-link {
+                margin: 0;
+                font-size: 16px;
+                display: inline;
+            }
+        }
+
+        nav {
+
+            a,
+            .submenu {
+                border-right: 1px solid white;
+            }
+
+            .submenu {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+
+                .nav-link {
+                    margin: 0;
+                    text-align: center;
+                    border: none;
+                }
+
+                .nav-link-sub {
+                    display: none;
+                    margin: 0px;
+                    padding: 10px;
+                }
+
+                &:hover .nav-link-sub {
+                    display: block;
+                }
+            }
+
+            .submenu-container {
+                background: $bg-alt;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                top: 100%;
+                left: 0px
+            }
+        }
+    }
+}
