@@ -48,6 +48,10 @@ header nav .submenu .nav-link-sub {
   margin-left: 25px;
 }
 
+header .submenu-container {
+  z-index: 1;
+}
+
 @media only screen and (max-width: 775px) {
   .fa-chevron-down {
     font-size: 0;

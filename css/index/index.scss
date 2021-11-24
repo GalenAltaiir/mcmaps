@@ -12,6 +12,10 @@ html, body, button{
     background-color: $bg;
 }
 
+img{
+    z-index: 0;
+}
+
 
 
 main{
@@ -65,6 +69,11 @@ main{
         padding: 10px;
     }
 
+    .map-preview-container{
+        text-decoration: none;
+        color: white;
+    }
+
     .map-preview{
         margin-left: 14px;
         margin-right: 14px;
@@ -104,13 +113,179 @@ main{
             display: none;
         }
     }
+
+}
+// DESKTOP
+
+@media only screen and (min-width: $tablet) {
+    main{
+        
+        .latest-maps, .updated-maps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .map-preview {
+                grid-template-columns: auto;
+            }
+
+            .map-description {
+                display: grid;
+                font-size: .4rem;
+                text-transform: none;
+                text-align: left;
+                margin: 25px;
+                grid-column: 1/-1;
+            }
+
+
+            .label-long {
+                grid-column: 1/-1;
+            }
+        }
+    }
 }
 
+@media only screen and (min-width: $desktop) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "head head head head head head head head head head head head"
+        ".... main main main main main main main main main main ...."
+        "foot foot foot foot foot foot foot foot foot foot foot foot"
+        ;
+    }
 
-.hidden {
-    display: none;
+    header{
+        grid-area: head;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: foot;
+    }
+    main{
+
+        .spotlight {
+            grid-template-columns: repeat(4, 1fr);
+            .spot-image {
+                .label {
+                    padding: 0;
+                    margin: 0;
+                    position: absolute;
+                    bottom: 100%;
+                    background: $primary;
+                    padding: 5px;
+                }
+            }
+            
+            .spot-title {
+                color: white;
+                grid-column: 1/-1;
+                padding: 0;
+                margin: 0;
+            }
+
+            .spot-author{
+                color: white;
+                font-size: 0.35rem;
+                grid-column: 3/4;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .spot-date{
+                padding: 0;
+                margin: 0;
+                text-align: right;
+                margin-right: 5px;
+                display: grid;
+                font-size: .35rem;
+                text-transform: none;
+                grid-column: 2/3;
+            }
+
+        
+        }
+
+        .latest-maps,
+        .updated-maps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .label-long{
+                grid-column: 1/-1;
+            }
+        }
+        
+        .map-preview {
+            grid-template-columns: auto;
+
+
+            small {
+                display: grid;
+
+                .map-title,
+                .map-author,
+                .map-date .map-description {
+                    row-gap: 0px;
+                    column-gap: 0px;
+                }
+
+                .map-title {
+                    text-transform: uppercase;
+                    grid-row-start: 1;
+                    justify-self: center;
+                }
+
+                .map-author,
+                .map-date {
+                    font-size: .3rem;
+                    justify-self: center;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .map-description {
+                display: grid;
+                font-size: .4rem;
+                padding: 5px;
+                margin: 10px;
+            }
+        }
+    }
 }
 
+@media only screen and (min-width: $desktop-xl) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "head head head head head head head head head head head head"
+            ".... .... main main main main main main main main .... ...."
+            "foot foot foot foot foot foot foot foot foot foot foot foot"
+        ;
+        main{
+            .latest-maps,
+            .updated-maps {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
 
-
-
+                .label-long {
+                    grid-column: 1/-1;
+                }
+            }
+        }
+    }
+}
+    
+    
+    
+    
+    
+    
+    
