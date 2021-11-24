@@ -1,3 +1,17 @@
+html,
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0607;
+}
+
+img {
+  z-index: 0;
+}
+
 header {
   background-color: #1a0d0e;
   display: -ms-grid;
@@ -136,6 +150,20 @@ header .submenu-container {
     top: 100%;
     left: 0px;
   }
+}
+
+html,
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0607;
+}
+
+img {
+  z-index: 0;
 }
 
 footer {
@@ -279,6 +307,20 @@ footer .referral-container {
   }
 }
 
+html,
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0607;
+}
+
+img {
+  z-index: 0;
+}
+
 body {
   color: white;
 }
@@ -297,18 +339,6 @@ h1, h2 {
 
 h3 {
   font-size: .5rem;
-}
-
-html, body, button {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  background-color: #0d0607;
-}
-
-img {
-  z-index: 0;
 }
 
 main .spotlight {

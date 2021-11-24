@@ -1,5 +1,19 @@
 @import '../general/scheme.scss';
 
+html,
+body,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: $bg;
+}
+
+img {
+    z-index: 0;
+}
+
 $tablet: 768px;
 $desktop: 992px;
 $desktop-xl: 1500px;

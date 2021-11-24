@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=config.css.map */
+html,
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0607;
+}
+
+img {
+  z-index: 0;
+}
+/*# sourceMappingURL=config.css.map */

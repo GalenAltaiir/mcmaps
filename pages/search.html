@@ -53,11 +53,14 @@
     <main>
 
         <div class="label-long">
-            <h3 class = "label-long-title">ALL MAPS</h3>
+            <h3 class = "label-long-title">SEARCH</h3>
+            <input id="searchbar" onkeyup="search_animal()" type="text"
+            class = "search" name="search" placeholder="Search by map name, author, description, date">
         </div>
 
-    <section class = "maps">
+    <section class = "maps" id = "list">
 
+        
             <a class = "map-preview-container" href="">
                 <div class="map-preview">
                     <img src="/img/spot.jpg" alt="">
@@ -68,18 +71,17 @@
                     </small>
                 </div>
             </a>
-
+            
             <a class = "map-preview-container" href="">
                 <div class="map-preview">
                     <img src="/img/spot.jpg" alt="">
                     <small>
-                        <p class="map-title">The Great Fall</p>
-                        <p class="map-author map-date">by AmirKaka • 14 Nov, 2021</p>
+                        <p class="map-title">Massive Fail 2</p>
+                        <p class="map-author map-date">by Damian • 14 Nov, 2022</p>
                         <p class="map-description">Parkour around a beautiful waterfall in a new fast-paced parkour map with 40 levels of medium difficulty parkour, Can you reach the top of the waterfall?</p>
                     </small>
                 </div>
-            </a>
-    
+            </a>   
 
     </main>
 
@@ -121,4 +123,5 @@
         <p class = "copyright">© 2021 All Rights Reserved | <a href="https://www.mcmaps.net/">MCMaps.net</a></p>
     </footer>
     <script src="/js/nav.js" async></script>
+    <script src="/js/search.js"></script>
     </body>

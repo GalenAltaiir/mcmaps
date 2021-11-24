@@ -4,19 +4,6 @@
 @import '../general/typography.scss';
 
 
-html, body, button{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
-    background-color: $bg;
-}
-
-img{
-    z-index: 0;
-}
-
-
 
 main{
     .spotlight{
@@ -267,8 +254,7 @@ main{
         grid-template-areas:
             "head head head head head head head head head head head head"
             ".... .... main main main main main main main main .... ...."
-            "foot foot foot foot foot foot foot foot foot foot foot foot"
-        ;
+            "foot foot foot foot foot foot foot foot foot foot foot foot";
         main{
             .latest-maps,
             .updated-maps {
