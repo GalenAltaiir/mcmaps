@@ -429,7 +429,7 @@ main .maps .map-preview-container .map-preview img {
   aspect-ratio: 16/9;
 }
 
-main .maps .map-preview-container .map-preview small {
+main .maps .map-preview-container .map-preview div {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (0.5fr)[2];
@@ -437,20 +437,20 @@ main .maps .map-preview-container .map-preview small {
   height: 100%;
 }
 
-main .maps .map-preview-container .map-preview small .map-title {
+main .maps .map-preview-container .map-preview div .map-title {
   font-size: calc(0.5rem + .5vw);
   grid-column: 1/-1;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-main .maps .map-preview-container .map-preview small .map-auhtor, main .maps .map-preview-container .map-preview small .map-date {
+main .maps .map-preview-container .map-preview div .map-auhtor, main .maps .map-preview-container .map-preview div .map-date {
   font-size: calc(0.3rem + .5vw);
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-main .maps .map-preview-container .map-preview small .map-description {
+main .maps .map-preview-container .map-preview div .map-description {
   display: none;
 }
 
@@ -462,19 +462,19 @@ main .maps .map-preview-container .map-preview small .map-description {
     -ms-grid-columns: 1.25fr 2fr;
         grid-template-columns: 1.25fr 2fr;
   }
-  main .maps .map-preview-container .map-preview small {
+  main .maps .map-preview-container .map-preview div {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
   }
-  main .maps .map-preview-container .map-preview small .map-title {
+  main .maps .map-preview-container .map-preview div .map-title {
     font-size: calc(0.4rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-auhtor,
-  main .maps .map-preview-container .map-preview small .map-date {
+  main .maps .map-preview-container .map-preview div .map-auhtor,
+  main .maps .map-preview-container .map-preview div .map-date {
     margin: 0;
     font-size: calc(0.2rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-description {
+  main .maps .map-preview-container .map-preview div .map-description {
     margin: 15px;
     font-size: calc(0.25rem + .5vw);
     display: -ms-grid;
@@ -487,19 +487,19 @@ main .maps .map-preview-container .map-preview small .map-description {
     -ms-grid-columns: 1.3fr 2fr;
         grid-template-columns: 1.3fr 2fr;
   }
-  main .maps .map-preview-container .map-preview small {
+  main .maps .map-preview-container .map-preview div {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
   }
-  main .maps .map-preview-container .map-preview small .map-title {
+  main .maps .map-preview-container .map-preview div .map-title {
     font-size: calc(0.45rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-auhtor,
-  main .maps .map-preview-container .map-preview small .map-date {
+  main .maps .map-preview-container .map-preview div .map-auhtor,
+  main .maps .map-preview-container .map-preview div .map-date {
     margin: 0;
     font-size: calc(0.25rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-description {
+  main .maps .map-preview-container .map-preview div .map-description {
     margin: 15px;
     font-size: calc(0.3rem + .5vw);
     display: -ms-grid;
@@ -508,19 +508,19 @@ main .maps .map-preview-container .map-preview small .map-description {
 }
 
 @media only screen and (min-width: 1500px) {
-  main .maps .map-preview-container .map-preview small {
+  main .maps .map-preview-container .map-preview div {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
   }
-  main .maps .map-preview-container .map-preview small .map-title {
+  main .maps .map-preview-container .map-preview div .map-title {
     font-size: calc(0.45rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-auhtor,
-  main .maps .map-preview-container .map-preview small .map-date {
+  main .maps .map-preview-container .map-preview div .map-auhtor,
+  main .maps .map-preview-container .map-preview div .map-date {
     margin: 0;
     font-size: calc(0.25rem + .5vw);
   }
-  main .maps .map-preview-container .map-preview small .map-description {
+  main .maps .map-preview-container .map-preview div .map-description {
     margin: 15px;
     font-size: calc(0.3rem + .5vw);
     display: -ms-grid;
