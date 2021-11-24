@@ -418,18 +418,18 @@ main .map-preview img {
   grid-row: 1/-1;
 }
 
-main .map-preview small {
+main .map-preview span {
   display: -ms-grid;
   display: grid;
 }
 
-main .map-preview small .map-title, main .map-preview small .map-author, main .map-preview small .map-date .map-description {
+main .map-preview span .map-title, main .map-preview span .map-author, main .map-preview span .map-date .map-description {
   row-gap: 0px;
   -webkit-column-gap: 0px;
           column-gap: 0px;
 }
 
-main .map-preview small .map-title {
+main .map-preview span .map-title {
   text-transform: uppercase;
   -ms-grid-row: 1;
       grid-row-start: 1;
@@ -437,7 +437,7 @@ main .map-preview small .map-title {
       justify-self: center;
 }
 
-main .map-preview small .map-author, main .map-preview small .map-date {
+main .map-preview span .map-author, main .map-preview span .map-date {
   font-size: .3rem;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -556,26 +556,26 @@ main .map-preview .map-description {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
-  main .map-preview small {
+  main .map-preview span {
     display: -ms-grid;
     display: grid;
   }
-  main .map-preview small .map-title,
-  main .map-preview small .map-author,
-  main .map-preview small .map-date .map-description {
+  main .map-preview span .map-title,
+  main .map-preview span .map-author,
+  main .map-preview span .map-date .map-description {
     row-gap: 0px;
     -webkit-column-gap: 0px;
             column-gap: 0px;
   }
-  main .map-preview small .map-title {
+  main .map-preview span .map-title {
     text-transform: uppercase;
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  main .map-preview small .map-author,
-  main .map-preview small .map-date {
+  main .map-preview span .map-author,
+  main .map-preview span .map-date {
     font-size: .3rem;
     -ms-grid-column-align: center;
         justify-self: center;

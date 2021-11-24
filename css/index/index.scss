@@ -75,7 +75,7 @@ main{
             grid-row: 1/-1;
         }
 
-        small{
+        span{
             display: grid;
             .map-title, .map-author, .map-date .map-description{
                 row-gap: 0px;
@@ -212,7 +212,7 @@ main{
             grid-template-columns: auto;
 
 
-            small {
+            span{
                 display: grid;
 
                 .map-title,

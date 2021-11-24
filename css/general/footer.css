@@ -1,3 +1,17 @@
+html,
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0607;
+}
+
+img {
+  z-index: 0;
+}
+
 footer {
   text-align: center;
   background: #1a0d0e;
