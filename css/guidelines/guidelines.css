@@ -368,289 +368,132 @@ h3 {
   font-size: .5rem;
 }
 
-main .spotlight {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  position: relative;
-  background: #63141b;
-  margin: 14px;
-  margin-top: 90px;
+body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-main .spotlight img {
-  aspect-ratio: 16/9;
-  width: 100%;
-}
-
-main .spotlight .spot-image {
-  grid-column: 1/-1;
-}
-
-main .spotlight .spot-image .label {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  bottom: 100%;
-  background: #E32D3D;
-  padding: 5px;
-}
-
-main .spotlight .spot-author {
-  color: white;
-  text-transform: none;
-}
-
-main .spotlight .spot-date, main .spotlight .spot-description {
-  display: none;
-}
-
-main .label-long {
-  margin-top: 50px;
-  background-color: #63141b;
-  width: 100%;
-}
-
-main .label-long-title {
-  margin: 0;
-  background: #E32D3D;
-  width: 60vw;
-  padding: 10px;
-}
-
-main .map-preview-container {
-  text-decoration: none;
-  color: white;
-}
-
-main .map-preview {
-  margin-left: 14px;
-  margin-right: 14px;
-  margin-top: 25px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.25fr;
-      grid-template-columns: 1fr 1.25fr;
-  background: #1a0d0e;
-}
-
-main .map-preview img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  grid-row: 1/-1;
-}
-
-main .map-preview div {
-  display: -ms-grid;
-  display: grid;
-}
-
-main .map-preview div .map-title, main .map-preview div .map-author, main .map-preview div .map-date .map-description {
-  row-gap: 0px;
-  -webkit-column-gap: 0px;
-          column-gap: 0px;
-}
-
-main .map-preview div .map-title {
-  text-transform: uppercase;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-main .map-preview div .map-author, main .map-preview div .map-date {
-  font-size: .3rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin: 0;
-  padding: 0;
-}
-
-main .map-preview .map-description {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  main .spotlight .spot-title {
-    grid-column: 1/-1;
-  }
-  main .spotlight .spot-author {
-    grid-column: 1/-1;
-    margin: 0;
-    font-size: .4rem;
-  }
-  main .spotlight .spot-description {
-    display: -ms-grid;
-    display: grid;
-    grid-column: 1/-1;
-    text-transform: none;
-    margin: 15px;
-  }
-  main .latest-maps, main .updated-maps {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  main .latest-maps .map-preview, main .updated-maps .map-preview {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  main .latest-maps .map-description, main .updated-maps .map-description {
-    display: -ms-grid;
-    display: grid;
-    font-size: .4rem;
-    text-transform: none;
-    text-align: left;
-    margin: 25px;
-    grid-column: 1/-1;
-  }
-  main .latest-maps .label-long, main .updated-maps .label-long {
-    grid-column: 1/-1;
-  }
 }
 
 @media only screen and (min-width: 992px) {
   body {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: "head head head head head head head head head head head head" ".... main main main main main main main main main main ...." "foot foot foot foot foot foot foot foot foot foot foot foot";
   }
-  header {
+  body header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: head;
   }
-  main {
+  body main {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-area: main;
   }
-  footer {
+  body footer {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: foot;
   }
-  main .spotlight {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-  main .spotlight .spot-image .label {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 100%;
-    background: #E32D3D;
-    padding: 5px;
-  }
-  main .spotlight .spot-title {
-    color: white;
-    grid-column: 1/-1;
-    padding: 0;
-    margin: 0;
-  }
-  main .spotlight .spot-author {
-    color: white;
-    font-size: 0.35rem;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-  }
-  main .spotlight .spot-date {
-    padding: 0;
-    margin: 0;
-    text-align: right;
-    margin-right: 5px;
-    display: -ms-grid;
-    display: grid;
-    font-size: .35rem;
-    text-transform: none;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
-  main .latest-maps,
-  main .updated-maps {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  main .latest-maps .label-long,
-  main .updated-maps .label-long {
-    grid-column: 1/-1;
-  }
-  main .map-preview {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  main .map-preview div {
-    display: -ms-grid;
-    display: grid;
-  }
-  main .map-preview div .map-title,
-  main .map-preview div .map-author,
-  main .map-preview div .map-date .map-description {
-    row-gap: 0px;
-    -webkit-column-gap: 0px;
-            column-gap: 0px;
-  }
-  main .map-preview div .map-title {
-    text-transform: uppercase;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  main .map-preview div .map-author,
-  main .map-preview div .map-date {
-    font-size: .3rem;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin: 0;
-    padding: 0;
-  }
-  main .map-preview .map-description {
-    display: -ms-grid;
-    display: grid;
-    font-size: .4rem;
-    padding: 5px;
-    margin: 10px;
-  }
 }
 
 @media only screen and (min-width: 1500px) {
   body {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas: "head head head head head head head head head head head head" ".... .... main main main main main main main main .... ...." "foot foot foot foot foot foot foot foot foot foot foot foot";
   }
-  body main .latest-maps,
-  body main .updated-maps {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+}
+
+main .logos {
+  margin: 15px;
+  background: #1a0d0e;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+main .logos h1 {
+  font-size: .6rem;
+  margin: 0;
+  background: #E32D3D;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+main .logos .logo-preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #63141b;
+  margin: 5px;
+  aspect-ratio: 1/1;
+}
+
+main .logos .logo-preview img {
+  width: calc(100% - 50px);
+  margin: 25px;
+}
+
+main .logos .logo-preview p {
+  text-align: center;
+}
+
+main .usage-guidelines {
+  margin: 15px;
+}
+
+main .usage-guidelines h2 {
+  text-align: center;
+  background: #E32D3D;
+  font-size: .6rem;
+  margin: 0;
+  margin-top: 20px;
+}
+
+main .usage-guidelines ul {
+  margin: 0;
+  padding-top: 15px;
+  background: #1a0d0e;
+  font-size: .45rem;
+}
+
+main .usage-guidelines ul li {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  main .logos h1 {
+    font-size: .8rem;
+    padding: 5px;
   }
-  body main .latest-maps .label-long,
-  body main .updated-maps .label-long {
-    grid-column: 1/-1;
+  main .usage-guidelines h2 {
+    font-size: .8rem;
+    padding: 5px;
   }
 }
-/*# sourceMappingURL=index.css.map */
+
+@media only screen and (min-width: 992px) {
+  main .logos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  main .logos h1 {
+    font-size: .8rem;
+    padding: 5px;
+    height: 5vh;
+  }
+  main .usage-guidelines h2 {
+    font-size: .8rem;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=guidelines.css.map */
