@@ -14,38 +14,51 @@
 </head>
 
 <body>
-        <header>
-        <img src="/img/logo.png" alt="logo">
-        <a href="javascript:void(0);" class="icon" onclick="slide()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <nav id = "hide" class = "showMenu">
-
-            <a href="/index.html" class = "nav-link">Latest</a>
-
-            <span class = "submenu"><span class = "nav-link">Map Categories <i class ="fa fa-chevron-down"></i></span>
-                <span class = "submenu-container"> 
-                    <a href="/pages/maps/all-maps.html" class="nav-link nav-link-sub">All Maps</a>
-                    <a href="/pages/maps/puzzle.html" class="nav-link nav-link-sub">Puzzle</a>
-                    <a href="/pages/maps/parkour.html" class="nav-link nav-link-sub">Parkour</a>
-                    <a href="/pages/maps/minigames.html" class="nav-link nav-link-sub">Minigames</a>  
-                    <a href="/pages/maps/maze.html" class="nav-link nav-link-sub">Maze</a>  
-                    <a href="/pages/maps/pvp.html" class="nav-link nav-link-sub">PvP</a>  
-                    <a href="/pages/maps/horror.html" class="nav-link nav-link-sub">Horror</a>
-                </span>
-            </span>
-            
-            <a href="/pages/map-jam.html" class = "nav-link">Map Jam</a>
-            <a href="/pages/verified.html" class = "nav-link">Verified</a>
-
-            <span class = "submenu"><span class = "nav-link">Builders <i class ="fa fa-chevron-down"></i></span>
-                <span class = "submenu-container">
-                    <a href="/pages/upload-a-map.html" class="nav-link nav-link-sub">Upload a Map</a>
-                    <a href="/pages/update-a-map.html" class="nav-link nav-link-sub">Update a Map</a>
-                </span>
-            </span>
-
-            <a href="/pages/search.html" class = "nav-link">Search</a>
+        <header class="header">
+        <a href="index.html" class="nav-logo"><img src="/img/logo.png" alt="logo"></a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Latest <b>|</b></a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link">
+                        Map Categories <i class ="fa fa-chevron-down"></i> <b>|</b>
+                        <span class = "dropdown">
+                            <a href="/pages/maps/all-maps.html" class="nav-link">All Maps</a>
+                            <a href="/pages/maps/puzzle.html" class="nav-link">Puzzle</a>
+                            <a href="/pages/maps/parkour.html" class="nav-link">Parkour</a>
+                            <a href="/pages/maps/minigames.html" class="nav-link">Minigames</a>  
+                            <a href="/pages/maps/maze.html" class="nav-link">Maze</a>  
+                            <a href="/pages/maps/pvp.html" class="nav-link">PvP</a>  
+                            <a href="/pages/maps/horror.html" class="nav-link">Horror</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/map-jam.html" class="nav-link">Map Jam <b>|</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/verified.html" class="nav-link">Verified <b>|</b></a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link">
+                        Builders  <i class ="fa fa-chevron-down"></i> <b>|</b>
+                        <span class = "dropdown">
+                            <a href="/pages/upload-a-map.html" class="nav-link">Upload a Map</a>
+                            <a href="/pages/update-a-map.html" class="nav-link">Update a Map</a>
+                        </span>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/search.html" class="nav-link">Search</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>

@@ -1,10 +1,16 @@
-var elem = document.getElementById("hide");
-function slide() {
-  elem.classList.toggle('showMenu');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
-const mediaQuery = window.matchMedia('(max-width: 992px)')
-// Check if the media query is true
-if (mediaQuery.matches) {
-  slide();
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
