@@ -9,9 +9,9 @@ button {
   background-color: #0d0607;
 }
 
-@media only screen and (min-width: 1037px) {
+@media only screen and (max-width: 1037px) {
   body {
-    margin-top: 6vh;
+    margin-top: 12vh;
   }
 }
 
