@@ -6,6 +6,9 @@
 
 
 main{
+    
+    
+    
     .spotlight{
         grid-template-columns: repeat(2, 1fr);
         position: relative;
@@ -16,6 +19,13 @@ main{
         grid-template-rows: auto 1fr;
         text-transform: uppercase;
         text-align: center;
+        
+        &:hover a{
+            background: white;
+            opacity: .1;
+            transition: all .2s;
+        }
+        
 
         .cover-link {
             position: absolute;
@@ -23,8 +33,9 @@ main{
             height: 100%;
             opacity: 0;
             top: 0;
-        }
 
+        }
+        
         img{
             aspect-ratio: 16/9; // only works on latest browsers, but it's a good fallback.
             width: 100%; 

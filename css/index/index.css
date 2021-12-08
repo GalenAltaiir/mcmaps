@@ -428,6 +428,13 @@ main .spotlight {
   text-align: center;
 }
 
+main .spotlight:hover a {
+  background: white;
+  opacity: .1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
 main .spotlight .cover-link {
   position: absolute;
   width: 100%;
