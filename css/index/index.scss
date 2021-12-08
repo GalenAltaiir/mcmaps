@@ -128,6 +128,7 @@ main{
             }
 
             .spot-description{
+                text-align: center;
                 display: grid;
                 grid-column: 1/-1;
                 text-transform: none;
@@ -146,7 +147,7 @@ main{
                 display: grid;
                 font-size: .4rem;
                 text-transform: none;
-                text-align: left;
+                text-align: center;
                 margin: 25px;
                 grid-column: 1/-1;
             }

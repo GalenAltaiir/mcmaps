@@ -477,10 +477,12 @@ main .tos h3 {
 
 main .tos ul {
   margin: 5px;
+  text-align: center;
   padding-bottom: 50px;
 }
 
 main .tos ul li {
+  margin: 5px;
   font-size: .35rem;
 }
 
