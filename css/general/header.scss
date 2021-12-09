@@ -76,6 +76,11 @@ a {
     cursor: pointer;
     position: relative;
 
+    i{
+        font-size: .35rem;
+        margin-bottom: 5px;
+    }
+
     .dropdown {
         display: none;
         width: 100%;

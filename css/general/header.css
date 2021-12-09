@@ -116,6 +116,11 @@ a {
   position: relative;
 }
 
+.nav-link i {
+  font-size: .35rem;
+  margin-bottom: 5px;
+}
+
 .nav-link .dropdown {
   display: none;
   width: 100%;
