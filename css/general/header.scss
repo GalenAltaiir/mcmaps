@@ -96,6 +96,17 @@ a {
 
 .nav-item{
     padding-bottom: 10px;
+    margin: 5px;
+    .nav-link{
+        border-right: 2px solid white;
+        padding-right: 10px;
+    }
+}
+
+.nav-item:nth-child(6){
+    .nav-link{
+            border-right: none;
+    }
 }
 
 .nav-link:hover {
@@ -133,9 +144,7 @@ a {
     }
 
     .nav-link {
-        b {
-            display: none;
-        }
+        border: none;
     }
 
     .nav-menu.active {

@@ -135,6 +135,16 @@ a {
 
 .nav-item {
   padding-bottom: 10px;
+  margin: 5px;
+}
+
+.nav-item .nav-link {
+  border-right: 2px solid white;
+  padding-right: 10px;
+}
+
+.nav-item:nth-child(6) .nav-link {
+  border-right: none;
 }
 
 .nav-link:hover {
@@ -173,8 +183,8 @@ a {
     transition: 0.3s;
     padding-bottom: 50px;
   }
-  .nav-link b {
-    display: none;
+  .nav-link {
+    border: none;
   }
   .nav-menu.active {
     left: 0;
@@ -429,8 +439,8 @@ main .spotlight {
 }
 
 main .spotlight:hover a {
-  background: white;
-  opacity: .1;
+  background: black;
+  opacity: .3;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -486,6 +496,14 @@ main .label-long-title {
 main .map-preview-container {
   text-decoration: none;
   color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .map-preview-container:hover .map-preview {
+  background: #63141b;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 main .map-preview {
